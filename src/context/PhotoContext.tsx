@@ -23,26 +23,26 @@ const DEFAULT_SLOTS: Record<'photo1' | 'photo2' | 'photo3', PhotoSlot> = {
   photo1: {
     id: 'photo1',
     title: 'Dra. Carolina Vergutz',
-    subtitle: 'Cirurgiã-Dentista (CRO-RS 34390) no Consultório',
+    subtitle: 'Cirurgiã-Dentista (CRO-RS 34390) · Graduada UFSC',
     defaultSrc: './assets/foto1.webp',
     customSrc: null,
     alt: 'Dra. Carolina Vergutz - Cirurgiã-Dentista em Santa Cruz do Sul',
   },
   photo2: {
     id: 'photo2',
-    title: 'Atendimento Clínico Humanizado',
-    subtitle: 'Tecnologia moderna e cuidado sem pressa',
+    title: 'Consultório & Atendimento Clínico',
+    subtitle: 'Ambiente moderno com vista e biossegurança rigorosa',
     defaultSrc: './assets/foto2.webp',
     customSrc: null,
-    alt: 'Dra. Carolina Vergutz realizando atendimento odontológico cuidadoso',
+    alt: 'Consultório odontológico moderno da Dra. Carolina Vergutz com cadeira clínica',
   },
   photo3: {
     id: 'photo3',
-    title: 'Consultório no Centro / Higienópolis',
-    subtitle: 'Rua Borges de Medeiros, 274 - Sala 401',
+    title: 'Edifício Leonardo da Vinci',
+    subtitle: 'Rua Borges de Medeiros, 274 · Sala 401 (Centro / Higienópolis)',
     defaultSrc: './assets/foto3.webp',
     customSrc: null,
-    alt: 'Consultório odontológico acolhedor da Dra. Carolina Vergutz',
+    alt: 'Fachada do Edifício Leonardo da Vinci 274 na Rua Borges de Medeiros',
   },
 };
 

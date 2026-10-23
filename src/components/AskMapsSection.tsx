@@ -41,13 +41,13 @@ export const AskMapsSection: React.FC = () => {
                 </div>
                 <div>
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-[#967238]">
-                    Endereço Completo
+                    Endereço Completo · Ed. Leonardo da Vinci
                   </span>
                   <h3 className="text-lg font-semibold text-[#242220] leading-snug">
-                    {CLINIC_INFO.street} - {CLINIC_INFO.complement}
+                    {CLINIC_INFO.building} — {CLINIC_INFO.complement}
                   </h3>
                   <p className="text-xs text-[#6E6A64] mt-0.5">
-                    Bairro {CLINIC_INFO.neighborhood} · CEP {CLINIC_INFO.postalCode}
+                    {CLINIC_INFO.street} · Bairro {CLINIC_INFO.neighborhood} · CEP {CLINIC_INFO.postalCode}
                   </p>
                   <p className="text-xs font-medium text-[#242220] mt-0.5">
                     Santa Cruz do Sul - RS

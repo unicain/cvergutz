@@ -92,15 +92,15 @@ export const AboutSection: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManage
                 Dra. Carolina Vergutz
               </h2>
               <p className="text-sm font-medium text-[#6E6A64]">
-                Cirurgiã-Dentista · CRO-RS 34390 · Santa Cruz do Sul
+                Cirurgiã-Dentista · CRO-RS 34390 · Graduada pela UFSC
               </p>
             </div>
 
             <div className="space-y-4 text-sm sm:text-base text-[#6E6A64] leading-relaxed">
               <p>
-                Formada com sólida base acadêmica e protocolos científicos contemporâneos, a 
+                Graduada em Odontologia pela <strong>UFSC (Universidade Federal de Santa Catarina)</strong> com protocolos clínicos contemporâneos, a 
                 <strong className="text-[#242220] font-medium"> Dra. Carolina Vergutz </strong> 
-                iniciou os atendimentos em seu consultório em abril de 2026, com o propósito de transformar a experiência de ir ao dentista em Santa Cruz do Sul.
+                inaugurou seu consultório próprio em abril de 2026 no <strong>Edifício Leonardo da Vinci (Sala 401)</strong>, com o propósito de transformar a experiência de ir ao dentista em Santa Cruz do Sul.
               </p>
               <p>
                 Acreditamos que cada paciente é único. Esqueça aquela sensação de atendimento impessoal, filas demoradas ou procedimentos apressados. Aqui, reservamos tempo integral para ouvir suas queixas, tirar todas as suas dúvidas com calma e construir um plano de tratamento feito sob medida para você.
