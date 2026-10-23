@@ -18,12 +18,13 @@ interface PhotoContextType {
 }
 
 // Visual placeholders carefully crafted matching Dra. Carolina's nude/gold luxury dental aesthetic
+// Configuração padrão dos 3 slots de foto otimizados em formato .webp
 const DEFAULT_SLOTS: Record<'photo1' | 'photo2' | 'photo3', PhotoSlot> = {
   photo1: {
     id: 'photo1',
     title: 'Dra. Carolina Vergutz',
     subtitle: 'Cirurgiã-Dentista (CRO-RS 34390) no Consultório',
-    defaultSrc: './assets/aistudio/2_8f0ec99e.png',
+    defaultSrc: './assets/foto1.webp',
     customSrc: null,
     alt: 'Dra. Carolina Vergutz - Cirurgiã-Dentista em Santa Cruz do Sul',
   },
@@ -31,7 +32,7 @@ const DEFAULT_SLOTS: Record<'photo1' | 'photo2' | 'photo3', PhotoSlot> = {
     id: 'photo2',
     title: 'Atendimento Clínico Humanizado',
     subtitle: 'Tecnologia moderna e cuidado sem pressa',
-    defaultSrc: './assets/aistudio/2_8f0ec99e.png',
+    defaultSrc: './assets/foto2.webp',
     customSrc: null,
     alt: 'Dra. Carolina Vergutz realizando atendimento odontológico cuidadoso',
   },
@@ -39,7 +40,7 @@ const DEFAULT_SLOTS: Record<'photo1' | 'photo2' | 'photo3', PhotoSlot> = {
     id: 'photo3',
     title: 'Consultório no Centro / Higienópolis',
     subtitle: 'Rua Borges de Medeiros, 274 - Sala 401',
-    defaultSrc: './assets/aistudio/2_8f0ec99e.png',
+    defaultSrc: './assets/foto3.webp',
     customSrc: null,
     alt: 'Consultório odontológico acolhedor da Dra. Carolina Vergutz',
   },

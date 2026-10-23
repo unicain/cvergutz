@@ -11,6 +11,8 @@ interface Props {
 export const AboutSection: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManager }) => {
   const { slots } = usePhotos();
   const photo2 = slots.photo2;
+  const [photoError, setPhotoError] = React.useState(false);
+  const activeImage = photo2.customSrc || (!photoError ? photo2.defaultSrc : null);
 
   return (
     <section id="sobre" className="py-20 bg-[#FAF7F2] border-b border-[#E5DFD3]">
@@ -24,10 +26,11 @@ export const AboutSection: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManage
               
               <div className="relative rounded-3xl p-3 bg-white border border-[#E5DFD3] shadow-lg">
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#F4EFE6] flex items-center justify-center">
-                  {photo2.customSrc ? (
+                  {activeImage ? (
                     <img
-                      src={photo2.customSrc}
+                      src={activeImage}
                       alt={photo2.alt}
+                      onError={() => setPhotoError(true)}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />

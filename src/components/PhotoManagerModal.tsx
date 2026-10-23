@@ -126,20 +126,30 @@ export const PhotoManagerModal: React.FC<Props> = ({ isOpen, onClose, activeSlot
               />
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-medium text-white bg-[#967238] hover:bg-[#83612D] rounded-lg transition-colors shadow-sm"
+                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-medium text-white bg-[#967238] hover:bg-[#805F2D] rounded-lg transition-colors shadow-sm"
               >
                 <Upload className="w-3.5 h-3.5" />
-                Carregar Arquivo da Foto
+                Carregar Arquivo no Navegador
               </button>
 
               {currentSlot.customSrc && (
-                <button
-                  onClick={() => resetPhoto(selectedSlot)}
-                  className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium text-rose-700 bg-rose-50 hover:bg-rose-100 rounded-lg transition-colors border border-rose-200"
-                >
-                  <Trash2 className="w-3.5 h-3.5" />
-                  Restaurar
-                </button>
+                <>
+                  <a
+                    href={currentSlot.customSrc}
+                    download={`${selectedSlot === 'photo1' ? 'foto1' : selectedSlot === 'photo2' ? 'foto2' : 'foto3'}.webp`}
+                    className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium text-[#242220] bg-[#EAE3D6] hover:bg-[#DDD4C4] rounded-lg transition-colors border border-[#E5DFD3]"
+                    title="Baixar para colocar na pasta public/assets do repositório"
+                  >
+                    Baixar {selectedSlot === 'photo1' ? 'foto1.webp' : selectedSlot === 'photo2' ? 'foto2.webp' : 'foto3.webp'}
+                  </a>
+                  <button
+                    onClick={() => resetPhoto(selectedSlot)}
+                    className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium text-rose-700 bg-rose-50 hover:bg-rose-100 rounded-lg transition-colors border border-rose-200"
+                  >
+                    <Trash2 className="w-3.5 h-3.5" />
+                    Restaurar
+                  </button>
+                </>
               )}
             </div>
 
@@ -149,6 +159,21 @@ export const PhotoManagerModal: React.FC<Props> = ({ isOpen, onClose, activeSlot
                 {successMsg}
               </div>
             )}
+          </div>
+        </div>
+
+        {/* Git Permanent Deployment Guidance Box */}
+        <div className="mt-5 p-4 rounded-xl bg-[#EAE3D6]/40 border border-[#E5DFD3] text-xs text-[#6E6A64] space-y-1.5 leading-relaxed">
+          <p className="font-semibold text-[#242220]">
+            💡 Fotos WebP de alta velocidade salvas no repositório:
+          </p>
+          <p>
+            As fotos estão salvas e otimizadas na pasta <strong className="text-[#242220]">public/assets/</strong> em formato ultraleve <strong className="text-[#242220]">.webp</strong>:
+          </p>
+          <div className="flex flex-wrap gap-2 pt-1 font-mono text-[11px] text-[#242220]">
+            <span className="bg-white px-2 py-0.5 rounded border border-[#E5DFD3]">public/assets/foto1.webp (47 KB)</span>
+            <span className="bg-white px-2 py-0.5 rounded border border-[#E5DFD3]">public/assets/foto2.webp (65 KB)</span>
+            <span className="bg-white px-2 py-0.5 rounded border border-[#E5DFD3]">public/assets/foto3.webp (115 KB)</span>
           </div>
         </div>
 

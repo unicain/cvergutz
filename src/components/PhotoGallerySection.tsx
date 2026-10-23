@@ -8,6 +8,7 @@ interface Props {
 
 export const PhotoGallerySection: React.FC<Props> = ({ onOpenPhotoManager }) => {
   const { slots } = usePhotos();
+  const [erroredSlots, setErroredSlots] = React.useState<Record<string, boolean>>({});
 
   const galleryItems = [
     {
@@ -60,16 +61,20 @@ export const PhotoGallerySection: React.FC<Props> = ({ onOpenPhotoManager }) => 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {galleryItems.map((item, index) => {
             const hasCustom = Boolean(item.slot.customSrc);
+            const isErrored = erroredSlots[item.slotId];
+            const activeImg = item.slot.customSrc || (!isErrored ? item.slot.defaultSrc : null);
+
             return (
               <div 
                 key={item.slotId}
                 className="group relative rounded-2xl bg-white border border-[#E5DFD3] p-3 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
               >
                 <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#F4EFE6] flex items-center justify-center">
-                  {item.slot.customSrc ? (
+                  {activeImg ? (
                     <img
-                      src={item.slot.customSrc}
+                      src={activeImg}
                       alt={item.slot.alt}
+                      onError={() => setErroredSlots(prev => ({ ...prev, [item.slotId]: true }))}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />

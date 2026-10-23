@@ -22,6 +22,8 @@ interface Props {
 export const HeroSection: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManager }) => {
   const { slots } = usePhotos();
   const photo1 = slots.photo1;
+  const [photoError, setPhotoError] = React.useState(false);
+  const activeImage = photo1.customSrc || (!photoError ? photo1.defaultSrc : null);
 
   return (
     <section className="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#E5DFD3]">
@@ -138,10 +140,11 @@ export const HeroSection: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManager
                 
                 {/* Main image container */}
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#F4EFE6] flex items-center justify-center">
-                  {photo1.customSrc ? (
+                  {activeImage ? (
                     <img
-                      src={photo1.customSrc}
+                      src={activeImage}
                       alt={photo1.alt}
+                      onError={() => setPhotoError(true)}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
