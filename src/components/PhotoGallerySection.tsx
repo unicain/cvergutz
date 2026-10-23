@@ -77,7 +77,7 @@ export const PhotoGallerySection: React.FC<Props> = ({ onOpenPhotoManager }) => 
                     <div className="w-full h-full p-6 flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#FAF7F2] to-[#EAE3D6]/70">
                       <div className="w-20 h-20 rounded-full bg-white p-2 shadow-sm border border-[#E5DFD3] flex items-center justify-center mb-3">
                         <img 
-                          src="/assets/aistudio/2_8f0ec99e.png" 
+                          src="./assets/aistudio/2_8f0ec99e.png" 
                           alt="Dra Carolina" 
                           className="w-14 h-14 object-contain"
                         />

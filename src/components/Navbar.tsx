@@ -20,7 +20,7 @@ export const Navbar: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManager }) =
           className="flex items-center gap-3 text-lg sm:text-xl font-serif tracking-tight text-[#242220] hover:text-[#967238] transition-colors whitespace-nowrap shrink-0 group"
         >
           <img 
-            src="/assets/aistudio/2_8f0ec99e.png" 
+            src="./assets/aistudio/2_8f0ec99e.png" 
             alt="Dra. Carolina Vergutz" 
             className="w-10 h-10 object-contain rounded-full border border-[#E5DFD3] p-0.5 bg-[#F4EFE6] shadow-sm group-hover:scale-105 transition-transform" 
           />

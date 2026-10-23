@@ -103,7 +103,7 @@ export const PhotoManagerModal: React.FC<Props> = ({ isOpen, onClose, activeSlot
             ) : (
               <div className="p-3 text-center flex flex-col items-center justify-center text-[#967238]">
                 <img 
-                  src="/assets/aistudio/2_8f0ec99e.png" 
+                  src="./assets/aistudio/2_8f0ec99e.png" 
                   alt="Logo Dra. Carolina" 
                   className="w-20 h-20 object-contain opacity-80"
                 />

@@ -180,7 +180,7 @@ export const AskMapsSection: React.FC = () => {
               <div className="relative z-10 flex flex-col items-center animate-bounce-subtle">
                 <div className="p-3 bg-white rounded-2xl shadow-xl border-2 border-[#967238] flex items-center gap-3">
                   <img
-                    src="/assets/aistudio/2_8f0ec99e.png"
+                    src="./assets/aistudio/2_8f0ec99e.png"
                     alt="Dra. Carolina Vergutz"
                     className="w-10 h-10 object-contain rounded-full bg-[#FAF7F2] p-1 border border-[#E5DFD3]"
                   />

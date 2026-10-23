@@ -150,7 +150,7 @@ export const HeroSection: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManager
                     <div className="w-full h-full p-8 flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#FAF7F2] to-[#EAE3D6]">
                       <div className="relative w-44 h-44 rounded-full bg-[#FFFFFF] p-3 shadow-md border border-[#E5DFD3] flex items-center justify-center mb-6">
                         <img
-                          src="/assets/aistudio/2_8f0ec99e.png"
+                          src="./assets/aistudio/2_8f0ec99e.png"
                           alt="Dra. Carolina Vergutz - Logo"
                           className="w-full h-full object-contain"
                         />

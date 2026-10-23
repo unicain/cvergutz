@@ -35,7 +35,7 @@ export const AboutSection: React.FC<Props> = ({ onOpenBooking, onOpenPhotoManage
                     <div className="w-full h-full p-8 flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#FAF7F2] to-[#EAE3D6]">
                       <div className="w-24 h-24 rounded-full bg-[#FFFFFF] p-2 shadow-inner border border-[#E5DFD3] flex items-center justify-center mb-4">
                         <img 
-                          src="/assets/aistudio/2_8f0ec99e.png" 
+                          src="./assets/aistudio/2_8f0ec99e.png" 
                           alt="Dra. Carolina Vergutz" 
                           className="w-16 h-16 object-contain"
                         />

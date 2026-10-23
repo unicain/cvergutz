@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/assets/aistudio/2_8f0ec99e.png"
+                src="./assets/aistudio/2_8f0ec99e.png"
                 alt="Logo Dra. Carolina Vergutz"
                 className="w-12 h-12 object-contain rounded-full bg-[#FAF7F2] p-1"
               />
