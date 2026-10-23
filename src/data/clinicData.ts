@@ -163,7 +163,7 @@ export const TESTIMONIALS: Testimonial[] = [
     date: 'Outubro de 2026',
     rating: 5,
     treatment: 'Limpeza & Restauração Estética',
-    comment: 'Adorei o atendimento! Nada daquela correria de franquias onde cada vez é um profissional diferente. A Dra. Carolina é pontual, o consultório é aconchegante, cheiroso e transmite muita paz. Já virou minha dentista de confiança.',
+    comment: 'Adorei o atendimento! Nada daquela correria ou atendimento impessoal onde cada vez é um profissional diferente. A Dra. Carolina é pontual, o consultório é aconchegante, cheiroso e transmite muita paz. Já virou minha dentista de confiança.',
   },
   {
     id: 't4',
@@ -202,7 +202,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'atendimento',
   },
   {
-    question: 'Qual a diferença entre o atendimento da Dra. Carolina e clínicas de franquia?',
+    question: 'Qual a diferença entre o atendimento da Dra. Carolina e consultórios convencionais?',
     answer: 'No consultório da Dra. Carolina, todo o seu diagnóstico, planejamento e atendimento são realizados exclusivamente por ela (CRO-RS 34390), sem rotatividade de profissionais. As consultas têm horário reservado sem filas e tempo dedicado para ouvir suas necessidades sem pressa.',
     category: 'atendimento',
   },
