@@ -67,13 +67,13 @@ export const KEYWORD_METRICS = [
 export const TREATMENTS: Treatment[] = [
   {
     id: 'clareamento',
-    title: 'Clareamento Dental Moderno',
+    title: 'Clareamento Dental (Consultório & Caseiro)',
     category: 'estetica',
-    tagline: 'Sorriso radiante com sensibilidade controlada',
-    shortDesc: 'Técnicas combinadas (consultório a laser e moldeira caseira supervisionada) para clarear os dentes com segurança para o esmalte.',
-    fullDesc: 'Protocolo personalizado que respeita a estrutura do seu esmalte e previne sensibilidade. A Dra. Carolina avalia a tonalidade ideal para harmonia com sua pele e traços faciais, entregando resultados visíveis e naturais.',
-    benefits: ['Sem agredir o esmalte', 'Gel dessensibilizante moderno', 'Resultado natural e duradouro'],
-    duration: '1 a 3 sessões ou protocolo combinado de 2 semanas',
+    tagline: 'Sorriso radiante com clareamento de consultório e moldeiras caseiras',
+    shortDesc: 'Opções de clareamento no consultório e clareamento caseiro supervisionado com moldeiras personalizadas, com total segurança para o esmalte.',
+    fullDesc: 'Protocolos personalizados que respeitam a estrutura do seu esmalte e previnem a sensibilidade. A Dra. Carolina planeja o clareamento de consultório ou o caseiro com moldeiras confeccionadas sob medida, entregando resultados visíveis, seguros e naturais.',
+    benefits: ['Opção de consultório ou caseiro com moldeiras sob medida', 'Gel com agentes dessensibilizantes modernos', 'Resultado seguro, natural e duradouro'],
+    duration: 'Sessões em consultório ou protocolo caseiro supervisionado',
   },
   {
     id: 'clinica-geral',

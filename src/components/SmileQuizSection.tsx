@@ -11,7 +11,7 @@ export const SmileQuizSection: React.FC<Props> = ({ onOpenBooking }) => {
   const [selectedSensation, setSelectedSensation] = useState<string | null>(null);
 
   const goals = [
-    { id: 'clareamento', title: 'Quero clarear meus dentes', icon: '✨', rec: 'Clareamento Dental Moderno com dessensibilizante' },
+    { id: 'clareamento', title: 'Quero clarear meus dentes', icon: '✨', rec: 'Clareamento de Consultório ou Caseiro com Moldeiras' },
     { id: 'limpeza', title: 'Faz mais de 6 meses que não faço limpeza', icon: '🦷', rec: 'Profilaxia Completa com remoção de tártaro e flúor' },
     { id: 'dor', title: 'Estou sentindo dor ou incômodo agudo', icon: '⚡', rec: 'Atendimento de Urgência & Alívio Imediato' },
     { id: 'estetica', title: 'Dentes lascados ou restaurações antigas', icon: '💎', rec: 'Restaurações Estéticas Biomiméticas em Resina' },

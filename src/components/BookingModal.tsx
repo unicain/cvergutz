@@ -20,7 +20,7 @@ export const BookingModal: React.FC<Props> = ({ isOpen, onClose, initialTreatmen
 
   const services = [
     'Check-up Geral & Limpeza Profilática',
-    'Clareamento Dental (Consultório / Caseiro)',
+    'Clareamento Dental (Consultório / Caseiro com Moldeiras)',
     'Restauração Estética em Resina',
     'Atendimento de Urgência / Dor de Dente',
     'Tratamento de Canal (Endodontia)',
